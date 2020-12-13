@@ -76,9 +76,10 @@ else
   echo "succeed"
 fi
 
+
 # 修改mysql密码&创建database
 # 设置密码为password
-# ALTER USER 'root'@'localhost' IDENTIFIED BY '*{password}*';
+# ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 # ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '新密码';
 # 创建名为twitter的数据库
 # CRESTE DATABASE twitter;
