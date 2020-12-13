@@ -19,3 +19,15 @@
 启动之后，使用 `vagrant init hashicorp/bionic64 {你自己的box所在路径}` 来初始化容器。
 
 > Tips: hashicorp/bionic64后面跟空格，然后直接跟你的box所在路径，不要加大括号
+
+## License
+
+Copyright © 2013-2020 [九章算法](https://jiuzhang.com) 浙ICP备19045946号-1
+
+商务合作：[fukesu@jiuzhang.com](mailto:fukesu@jiuzhang.com)
+
+加入我们：[jiuzhang.com](https://jiuzhang.com/joinus)
+
+了解更多：[微博/九章算法](https://weibo.com/ninechapter) [知乎/九章算法](https://www.zhihu.com/people/crackinterview)
+
+友情链接：[领扣 LintCode](https://www.lintcode.com/)

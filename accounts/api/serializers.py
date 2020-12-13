@@ -1,5 +1,3 @@
-from abc import ABC
-
 from django.contrib.auth.models import User
 from rest_framework import serializers, exceptions
 
@@ -23,11 +21,11 @@ class SignupSerializer(serializers.ModelSerializer):
         # TODO<HOMEWORK> 增加验证 username 是不是只由给定的字符集合构成
         if User.objects.filter(username=data['username'].lower()).exists():
             raise exceptions.ValidationError({
-                'message': 'This email address has been occupied.'
+                'message': 'This username has been occupied. '
             })
         if User.objects.filter(email=data['email'].lower()).exists():
             raise exceptions.ValidationError({
-                'message': 'This email address has been occupied.'
+                'message': 'This email address has been occupied. '
             })
         return data
 
@@ -37,9 +35,9 @@ class SignupSerializer(serializers.ModelSerializer):
         password = validated_data['password']
 
         user = User.objects.create_user(
-            username=username,
-            email=email,
-            password=password,
+            username = username,
+            email = email,
+            password = password
         )
         return user
 

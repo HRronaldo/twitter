@@ -1,6 +1,10 @@
 *.box
-.vagrant
-Vagrantfile
+/.vagrant
+/Vagrantfile
 *.DS_Store
 __pycache__
-.idea
+/.idea
+/temp
+/.vscode
+/Pipfile
+/Pipfile.lock

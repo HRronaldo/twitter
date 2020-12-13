@@ -8,5 +8,5 @@ class Tweet(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        # 这里是你执行 print(tweet instance) 的时候会显示的内容
+        # 这里是你执行print(tweet instance) 的时候会显示的内容
         return '{} {}: {}'.format(self.created_at, self.user, self.content)
